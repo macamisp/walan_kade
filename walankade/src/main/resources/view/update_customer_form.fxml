@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="591.0" prefWidth="592.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateFormController">
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="848.0" layoutX="-7.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Untitled%20design.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearchId" layoutX="126.0" layoutY="49.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter ID Number" />
+      <JFXButton layoutX="317.0" layoutY="49.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #FFC300;" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="146.0" layoutY="299.0" prefHeight="22.0" prefWidth="118.0" text="Customer Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUpdateName" layoutX="174.0" layoutY="321.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="146.0" layoutY="363.0" prefHeight="22.0" prefWidth="136.0" text="Customer Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUpdateAddress" layoutX="174.0" layoutY="389.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="146.0" layoutY="425.0" prefHeight="22.0" prefWidth="136.0" text="Customer Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUpdateNumber" layoutX="174.0" layoutY="451.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="146.0" layoutY="484.0" prefHeight="22.0" prefWidth="109.0" text="Customer DOB" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUpdateDob" layoutX="174.0" layoutY="510.0" prefHeight="26.0" prefWidth="271.0" />
+      <JFXButton layoutX="241.0" layoutY="560.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #FFC300;" text="Update">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="317.0" layoutY="558.0" onAction="#btnClearOnAction" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: #FFC300;" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

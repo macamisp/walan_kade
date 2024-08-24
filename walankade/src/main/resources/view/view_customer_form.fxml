@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="610.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewFormController">
+   <children>
+      <ImageView fitHeight="719.0" fitWidth="740.0" layoutX="-63.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Untitled%20design.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="29.0" text="බැලීමට" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomers" layoutY="393.0" prefHeight="214.0" prefWidth="627.0" style="-fx-background-color: #FFC300;">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="68.0" text=" ID" />
+          <TableColumn fx:id="colName" prefWidth="122.40003967285156" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="164.8000030517578" text="Address" />
+            <TableColumn fx:id="colDob" prefWidth="132.79998779296875" text="DOB" />
+            <TableColumn fx:id="colNumber" prefWidth="136.79998779296875" text="Number" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="540.0" layoutY="642.0" onAction="#btnReloadOnAction" style="-fx-background-color: #FFC300;" text="Reload">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="737.0" prefWidth="642.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+   <children>
+      <ImageView fitHeight="630.0" fitWidth="642.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Untitled%20design.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="114.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="641.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="258.0" text="හලො කොහොමද" textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="53.0" prefHeight="66.0" prefWidth="532.0" text="වලන් කඩෙට එකතු කරන්න" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Group layoutX="50.0" layoutY="173.0">
+         <children>
+            <JFXTextField fx:id="txtid" focusColor="WHITE" layoutX="25.0" layoutY="33.0" prefHeight="26.0" prefWidth="300.0" promptText="ID" unFocusColor="WHITE" />
+            <Label text="Customer ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutY="77.0" text="Customer Title" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cmbtitle" focusColor="WHITE" layoutX="24.0" layoutY="118.0" prefHeight="26.0" prefWidth="300.0" promptText="Title" unFocusColor="WHITE" />
+            <Label layoutY="169.0" text="Customer Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtname" focusColor="WHITE" layoutX="25.0" layoutY="206.0" prefHeight="26.0" prefWidth="300.0" promptText="Name" unFocusColor="WHITE" />
+            <Label layoutY="248.0" text="Customer Address" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtaddress" focusColor="BLACK" layoutX="24.0" layoutY="286.0" prefHeight="26.0" prefWidth="300.0" promptText="Address" unFocusColor="WHITE" />
+            <Label layoutY="328.0" text="Countact Number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtnumber" focusColor="BLACK" layoutX="25.0" layoutY="364.0" prefHeight="26.0" prefWidth="300.0" promptText="+94 -" unFocusColor="WHITE" />
+            <Label layoutY="407.0" text="Date Of Birth" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datedob" layoutX="13.0" layoutY="440.0" prefHeight="26.0" prefWidth="319.0" />
+         </children>
+      </Group>
+      <JFXButton layoutX="458.0" layoutY="669.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #FFC300;" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

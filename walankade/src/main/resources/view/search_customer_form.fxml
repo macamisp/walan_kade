@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="599.0" prefWidth="603.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchFormController">
+   <children>
+      <ImageView fitHeight="656.0" fitWidth="686.0" layoutX="-7.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Untitled%20design.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="321.0" layoutY="12.0" prefHeight="46.0" prefWidth="97.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchId" layoutX="73.0" layoutY="145.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter ID Number" />
+      <JFXButton layoutX="268.0" layoutY="145.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #FFC300;" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="203.0" prefHeight="22.0" prefWidth="118.0" text="Customer Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchName" layoutX="42.0" layoutY="229.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="14.0" layoutY="267.0" prefHeight="22.0" prefWidth="136.0" text="Customer Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchAddress" layoutX="42.0" layoutY="293.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="14.0" layoutY="329.0" prefHeight="22.0" prefWidth="136.0" text="Customer Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchNumber" layoutX="42.0" layoutY="355.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="14.0" layoutY="388.0" prefHeight="22.0" prefWidth="109.0" text="Customer DOB" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchDob" layoutX="42.0" layoutY="414.0" prefHeight="26.0" prefWidth="271.0" />
+   </children>
+</AnchorPane>
